@@ -1,0 +1,375 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #c2410c; /* Brand orange-red */
+  --color-primary-content: #ffffff;
+  --color-secondary: #6b7280; /* Muted gray text */
+  --color-neutral: #3f3f46; /* Dark sections (footer, bars) */
+  --color-neutral-content: #f4f4f5; /* Text on dark backgrounds */
+  --color-base-100: #fff8f1; /* Warm white page background */
+  --color-base-200: #f5ede5; /* Slightly darker warm white */
+  --color-base-300: #e7d9c9; /* Borders and dividers */
+  --color-base-content: #2d1b10; /* Default dark text */
+  --color-error: #ef4444; /* Red for error states */
+  --color-success: #22c55e; /* Green for success states */
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar {
+  background-color: var(--color-primary);
+  height: 64px;
+
+  img {
+    width: 180px;
+  }
+
+  .login:hover {
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+  }
+}
+
+.header-register {
+  color: var(--color-primary);
+}
+
+.header-register:hover {
+  background: transparent;
+  color: var(--color-base-100);
+  border: 1px solid var(--color-base-100);
+}
+
+.images img {
+  height: 85vh;
+}
+
+.image-position {
+  position: absolute;
+  top: 130px;
+  width: 100vw;
+
+  .input {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+    input {
+      width: 100%;
+      border: none;
+    }
+  }
+
+  .btn:first-child {
+    background-color: var(--color-primary) !important;
+    color: #ffffff;
+  }
+}
+
+.featuredRestaurants {
+  background: linear-gradient(var(--color-primary), white);
+  width: 100v;
+  height: 90vh;
+}
+
+.card-btn .btn {
+  background: var(--color-base-300);
+  font-size: 10px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  box-shadow: 0 0 5px 0 gray;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.explore-menu {
+  background: var(--color-primary);
+}
+
+.analysis {
+  background: var(--color-base-100);
+
+  .card1 {
+    h1 {
+      color: var(--color-primary);
+      font-weight: bold;
+    }
+  }
+
+  .card2 {
+    h1 {
+      color: #d9468f;
+      font-weight: bold;
+    }
+  }
+  .card3 {
+    h1 {
+      color: var(--color-primary);
+      font-weight: bold;
+    }
+  }
+  .card4 {
+    h1 {
+      color: #d9468f;
+      font-weight: bold;
+    }
+  }
+}
+
+.position {
+  position: relative;
+
+  .badges {
+    background: var(--color-primary);
+    position: absolute;
+    border: none;
+    top: 10px;
+    right: 10px;
+    border-radius: 30px;
+  }
+}
+
+.customers {
+  .card1 {
+    background: var(--color-base-100);
+  }
+
+  .aj {
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+  }
+  i {
+    color: #fdc700;
+  }
+}
+
+.BecomePartner {
+  background: var(--color-primary);
+  padding: 20px;
+
+  .partner-with-us {
+    width: 180px;
+    height: 40px;
+    color: var(--color-primary);
+  }
+}
+
+.footer {
+  background: var(--color-neutral);
+}
+
+footer {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  a:hover {
+    color: var(--color-primary) !important;
+  }
+}
+
+.images {
+  background: #6f1a1a;
+}
+
+.about-rating {
+  background: var(--color-neutral);
+}
+
+.about-rating .container img {
+  object-fit: cover;
+}
+
+.container div h1 {
+  color: var(--color-primary);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.born {
+  background: var(--color-base-200);
+}
+
+.our-story {
+  color: var(--color-primary);
+}
+
+.corevalues {
+  background: var(--color-base-300);
+}
+
+/* Order Now  */
+
+.featuredRestaurant-menu,
+.orderNow-top-input,
+.orderNow-top,
+input {
+  background: var(--color-base-200);
+}
+
+.featuredRestaurant-menu .orderNow-top-input .orderNow-top {
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  width: 80%;
+}
+
+.featuredRestaurant-menu .orderNow-top-input input {
+  outline: none;
+}
+
+.orderNow-top-input {
+  position: sticky;
+  top: 0;
+  z-index: 998;
+}
+
+/* About  */
+
+.heading-about-image {
+  font-size: 50px;
+}
+
+.heading-about-image span {
+  color: var(--color-primary);
+}
+
+/* login Page*/
+
+.form-login {
+  top: 0;
+  left: 20px;
+}
+
+hr {
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.eye-login {
+  right: 10px;
+  top: 7px;
+}
+
+.team-section {
+  background-color: #f4efea;
+}
+
+.team-heading-small {
+  color: #c44b06;
+  letter-spacing: 3px;
+}
+
+.team-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #c44b06;
+}
+
+.cta-section {
+  background-color: #c44b06;
+}
+
+.get-started-btn {
+  color: #c44b06;
+}
+
+.contact-btn {
+  border: 2px solid white;
+}
+
+/* contact page */
+
+.contact-image {
+  height: 85vh !important;
+}
+
+.feedback-image {
+  height: 90vh !important;
+}
+
+/* help center */
+
+.help-center-input {
+  background: #9d9fa1 !important;
+  color: #444343;
+  border: 0px solid #9d9fa1;
+}
+
+.btn-help-center {
+  background: var(--color-primary);
+  color: var(--color-base-100);
+}
+
+.questionmark-icon {
+  color: var(--color-primary);
+}
+
+/* privacy and policy */
+
+.policy {
+  color: var(--color-primary) !important;
+}
+
+.privacy-second-section {
+  background: var(--color-base-100);
+}
+
+.accordion-item {
+  background: var(--color-base-100);
+  border: 1px solid #e7d9c9;
+}
+
+ul li::marker {
+  color: var(--color-primary);
+}
+
+.sitemap-main {
+  i {
+    color: var(--color-primary);
+  }
+
+  h5 {
+    color: var(--color-primary);
+    font-size: 1rem;
+  }
+}
+
+
+.overall-rating{
+
+  i:first-child{
+    color: orange;
+  }
+
+  i:hover{
+    color: orange;
+  }
+
+}
