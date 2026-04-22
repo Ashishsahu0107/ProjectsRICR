@@ -95,6 +95,8 @@ header {
   transition: transform 0.2s ease-in-out;
 }
 
+/* hover rastaurant card */
+
 .card1:hover,
 .card2:hover,
 .card3:hover,
