@@ -12,7 +12,7 @@
   <div>
     <header class="flex justify-between h-[70px]  bg-transparent items-center px-15">
       <a href="#" class="text-[20px] text-[#06A7BC] font-bold text-shadow-lg-[#06A7BC]">CyberSec</a>
-      <ul class="md:flex gap-5 text-stone-500 md:block hidden md:translate-[0%] translate-[-100%]  " id="toggleBtn">
+      <ul class="md:flex gap-5 text-stone-500 md:block hidden md:translate-[0%] translate-[-100%]  ">
         <li><a href="">About</a></li>
         <li><a href="">Courses</a></li>
         <li><a href="">Curriculum</a></li>
@@ -20,37 +20,25 @@
         <li><a href="">Blog</a></li>
         <li><a href="">FAQ</a></li>
       </ul>
-      <div class="flex gap-3 items-center"> 
+      <div class="flex gap-3 items-center">
         <i class="fa-solid fa-moon text-2xl"></i>
-        <button class="bg-[#06A7BC] px-6 py-3 text-white rounded-[13px] font-semibold md:block hidden">Enroll Now</button>
-        <div class="md:hidden block " id="status">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+        <button class="bg-[#06A7BC] px-6 py-3 text-white rounded-[13px] font-semibold md:block hidden">Enroll
+          Now</button>
+        <i class="fa-solid fa-bars"></i>
       </div>
     </header>
   </div>
   <section>
     <!-- bg-[url(./images/banner.png)] -->
     <div class=" h-screen w-[100%] object-cover flex justify-center">
-        <div class="md:mt-60" >
-          <h1 class="md:text-5xl text-3xl text-center font-bold text-black md:block">Master Cyber Security <br class="md:block hidden"> From Zero to Expert 🚀</h1>
-          <p class="m-[10px]">Learn ethical hacking, penetration testing, SOC operations and real-world security skills. </p>
-        </div>
+      <div class="md:mt-60">
+        <h1 class="md:text-5xl text-3xl text-center font-bold text-black md:block">Master Cyber Security <br
+            class="md:block hidden"> From Zero to Expert 🚀</h1>
+        <p class="m-[10px]">Learn ethical hacking, penetration testing, SOC operations and real-world security skills.
+        </p>
+      </div>
     </div>
   </section>
 </body>
-<script>
-const toggle = document.getElementById("#toggleBtn");
-const status = document.getElementById("#status");
 
-toggle.addEventListener("change", () => {
-  if (toggle.checked) {
-    status.innerText = "ON";
-    document.body.style.backgroundColor = "black";
-  } else {
-    status.innerText = "OFF";
-    document.body.style.backgroundColor = "white";
-  }
-});
-</script>
 </html>
